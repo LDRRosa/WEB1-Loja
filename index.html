@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Marketplace</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <!-- Container da parte esquerda do nav -->
+        <div class="navbar-left">
+            <div class="logo">
+                <h1>Minha Loja</h1>
+            </div>
+
+            <!-- Botão do menu hambúrguer-->
+            <button class="hamburger-btn" id="hamburger-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <!-- Overlay para fexar a o menu e o carrinho -->
+        <div class="overlay" id="overlay"></div>
+
+
+        <!-- Barra de pesquisa -->
+        <div class="search-bar">
+            <input type="text" placeholder="O que você procura?" />
+            <button class="search-btn">Buscar</button>
+        </div>
+
+        <!-- Ícone do carrinho -->
+        <div class="navbar-right">
+            <a href="#" class="cart-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Carrinho" class="cart-icon" />
+            </a>
+        </div>
+    </nav>
+
+    
+
+    <!-- Sidebar para categorias -->
+    <aside class="sidebar" id="sidebar">
+        <h2>Categorias</h2>
+        <ul>
+            <li><a href="#" class="category-link" data-category="all">Todos</a></li>
+            <li><a href="geladeiras" class="category-link" data-category="geladeiras">Geladeiras</a></li>
+            <li><a href="televisoes" class="category-link" data-category="televisoes">Televisões</a></li>
+            <li><a href="computadores" class="category-link" data-category="computadores">Computadores</a></
+        </ul>
+    </aside>
+
+    <!-- Sidebar do carrinho -->
+    <aside class="cart-sidebar" id="cart-sidebar">
+        <h2>Meu Carrinho</h2>
+        <ul class="cart-items"></ul>
+        <p class="cart-total">Total: R$ <span id="cart-total">0.00</span></p>
+        <button class="clear-cart-btn">Limpar Carrinho</button>
+        <button class="checkout-btn">Finalizar Compra</button>
+
+    </aside>
+
+    <!-- Carrossel -->
+    <section class="carousel">
+        <div class="carousel-track">
+            <img src="img/foto-carrocel1.png" alt="Slide 1">
+            <img src="img/foto-carrocel2.png" alt="Slide 2">
+            <img src="img/foto-carrocel3.png" alt="Slide 3">
+        </div>
+    </section>
+
+
+
+    <!-- Seção dos anúncios -->
+    <main class="product-section">
+        <h2>Destaques</h2>
+
+        <div class="products-grid">
+            
+            <div class="product-card" data-category="geladeiras">
+                <img src="img/geladeira.jpg" alt="Produto 1" />
+                <h3>Geladeira Brastemp</h3>
+                <p class="description">Geladeira Frost Free, 400L</p>
+                <p class="price">R$ 2499,00</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            
+            <div class="product-card" data-category="geladeiras">
+                <img src="img/geladeira-eletrolux.jpg" alt="Produto 2" />
+                <h3>Geladeira Electrolux</h3>
+                <p class="description">Geladeira Frost Free, 400L</p>
+                <p class="price">R$ 2199,00</p>
+                <button class="buy-btn">Comprar</button>
+                
+            </div>
+            
+            <div class="product-card" data-category="televisoes">
+                <img src="img/tv-sansung.jpg" alt="Produto 3" />
+                <h3>Smart TV Samsung 50"</h3>
+                <p class="description">Smart TV Samsung 50pol 4k</p>
+                <p class="price">R$ 2199,00</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            
+            <div class="product-card" data-category="televisoes">
+                <img src="img/tv-britania.webp" alt="Produto 4" />
+                <h3>Smart TV 42" Britânia</h3>
+                <p class="description">Full HD, tecnologia D-LED e painel VA</p>
+                <p class="price">R$ 1699,90</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            
+            <div class="product-card" data-category="computadores">
+                <img src="img/pc-mancer.jpg" alt="Produto 5" />
+                <h3>Computador Mancer Thor</h3>
+                <p class="description">Ryzen 5 4600g 16gb ram ssd 420gb</p>
+                <p class="price">R$ 2799,00</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            
+            <div class="product-card" data-category="computadores">
+                <img src="img/kit-pc.webp" alt="Produto 6" />
+                <h3>Kit PC Gamer Completo</h3>
+                <p class="description">i5 12600kf, 16GB DDR4, SSD 480GB, RTX 4060 Ti, monitor 24", kit mouse+teclado</p>
+                <p class="price">R$ 7899,90</p>
+                <button class="buy-btn">Comprar</button>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 - Leandro Rosa da silva</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
