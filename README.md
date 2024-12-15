@@ -1,4 +1,4 @@
-* Leleu Atacado
+# Leleu Atacado
 Leleu Atacado é um marketplace desenvolvido para oferecer uma experiência prática e confiável na compra de eletrônicos em atacado. Este projeto foi construído utilizando HTML, CSS, e JavaScript, com foco em design responsivo, navegabilidade intuitiva e funcionalidade eficiente.
 
 ## 🎯 Objetivo
